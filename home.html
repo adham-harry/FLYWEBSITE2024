@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Start font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End font awesome -->
+  <!-- Start google Fonts Links -->
+  <!-- link Arabic Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <!-- link English Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Other link font [logo footer font]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+  <!-- End google Fonts Links -->
+  <!-- Start style links -->
+  <link id="link_css" rel="stylesheet" href="Style/style.css">
+  <link id="link_css" rel="stylesheet" href="Style/Normalize.css">
+  <link id="link_css" rel="stylesheet" href="Style/swiper-bundle.min.css">
+  <!-- End style links -->
+  <title>Home</title>
+</head>
+<body>
+  <div class="all_page_home">
+    <main class= "main_home">
+      <div class="language_box">
+        <div class="box_icon_settings" >
+          <i id="btn_lang" class="fa-solid fa-gears"></i>
+        </div>
+        <div class="box_select_language" id="box_select_language">
+          <label for="select_lang" class="leb_select"><p  data-i18n ="Language">Language</p> <span>:</span></label>
+          <select name="select_lang" id="select_lang" class="select_lang">
+            <option class="option_lang" value="en" id="English" data-i18n ="English" dir="ltr" > English</option>
+            <option class="option_lang" value="ar" id="Arabic" data-i18n ="العربية" dir="rtl" >العربية</option>
+          </select>
+        </div>
+      </div>
+      <section class="hero_section">
+        <div class="container main_cont">
+          <!-- START NAV BAR -->
+          <header class="main_navbar"> 
+            <div class="container">
+              <section class="navbar_section">
+                <div class="logo">
+                  <a href="home.html" class="logo_box"><img src="images/logo_1.png"></a>
+                </div>
+                <div class="nav_pages" id="nav_pages">
+                  <ul class="section_links">
+                    <li class="box_link" ><a href="home.html"  class="link" data-i18n ="Home" >Home</a></li>
+                    <!-- Start drop Down menu -->
+                    <li class="box_link main_box_menu" >
+                        <label class="link btn_drop_menu" id="btn_menu"> 
+                          <span id="btn_menu" data-i18n ="Offers" >Offers</span> 
+                          <iconify-icon  id="btn_menu" icon="icon-park-solid:down-one"></iconify-icon>
+                        </label>
+                      <div class="box_menu_links" id= "myDropdown">
+                        <a href="#Flights" class="menu_link" data-i18n ="Flights" >Flights</a>
+                        <a href="#Hotels" class="menu_link" data-i18n ="Hotels" >Hotels</a>
+                        <a href="#Rent a Car" class="menu_link" data-i18n ="Rent_a_Car" >Rent a Car</a>
+                        <a href="#Cruises" class="menu_link" data-i18n ="Cruises"  >Cruises</a>
+                      </div>
+                      <!-- End drop Down menu -->
+                    </li>
+                    <li class="box_link"><a href="#"  class="link" data-i18n ="About_Us" >About Us</a></li>
+                    <li class="box_link"><a href="#"  class="link" data-i18n ="Contacts" >Contacts</a></li>
+                    <li class="box_link"><a href="#"  class="link" data-i18n ="Login" >Login</a></li>
+                  </ul>
+                  <!-- Start close button -->
+                    <div class="close_button" id="close_button">
+                      <iconify-icon icon="line-md:menu-to-close-alt-transition"></iconify-icon>
+                    </div>
+                  <!-- End close button -->
+                </div>
+                <!-- start nav button -->
+                <div class="nav_buttons">
+                  <!-- toggle button -->
+                  <div class="nav_toggle" id="nav_toggle">
+                    <iconify-icon class="toggle_icon" icon="line-md:close-to-menu-alt-transition"></iconify-icon>
+                  </div>
+                </div>
+                <!-- End nav button -->
+              </section>
+              </div>
+          </header>
+          <!-- END NAV BAR -->
+          <!-- carousel -->
+          <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+              <div class="item">
+                <img src="images/city_Italy.jpg">
+                <div class="after_div"></div>
+                  <div class="content">
+                    <div class="author"  >FLY AWAY<iconify-icon icon="fxemoji:airplane"></iconify-icon></div>
+                    <div class="title" data-i18n ="Discover_The_World"  >Discover The World</div>
+                    <div class="topic" data-i18n ="Italy" >Italy</div>
+                    <div class="des" id="text_1">
+                      <!-- lorem 50 -->
+                      A 7-day trip in the best hotels in the country with a great tourist program and visiting the 
+                      most famous and best tourist attractions in the country and visiting the 
+                      beaches (the trip includes accommodation and a plane ticket for a maximum of 3 people)...
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="btn_sMore" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="images/city_san_francisco_2.jpg">
+                <div class="after_div"></div>
+                <div class="content">
+                  <div class="author">FLY AWAY<iconify-icon icon="fxemoji:airplane"></iconify-icon></div>
+                  <div class="title"  data-i18n ="Discover_The_World" >Discover The World</div>
+                  <div class="topic" data-i18n ="San_Francisco"  >San Francisco</div>
+                  <div class="des" id="text_1">
+                    A 7-day trip in the best hotels in the country with a great tourist program and 
+                    visiting the most famous and best tourist attractions in the country and visiting the beaches 
+                    (the trip includes accommodation and a plane ticket for a maximum of 3 people)...
+                  </div>
+                  <div class="buttons">
+                    <a href="#" class="btn_sMore" data-i18n ="SEE_MORE">SEE MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/city_london.jpg">
+                <div class="after_div"></div>
+                <div class="content">
+                  <div class="author">FLY AWAY<iconify-icon icon="fxemoji:airplane"></iconify-icon></div>
+                  <div class="title" data-i18n ="Discover_The_World" >Discover The World</div>
+                  <div class="topic" data-i18n ="London">London</div>
+                  <div class="des" id="text_1">
+                    A 7-day trip in the best hotels in the country with a great tourist program and 
+                    visiting the most famous and best tourist attractions in the country and visiting the beaches 
+                    (the trip includes accommodation and a plane ticket for a maximum of 3 people)...
+                  </div>
+                  <div class="buttons">
+                      <a href="#" class="btn_sMore" data-i18n ="SEE_MORE">SEE MORE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/city_paris.jpg">
+                <div class="after_div"></div>
+                <div class="content">
+                <div class="author">FLY AWAY <iconify-icon icon="fxemoji:airplane"></iconify-icon></div>
+                  <div class="title" data-i18n ="Discover_The_World">Discover The World</div>
+                  <div class="topic" data-i18n ="paris">paris</div>
+                  <div class="des" id="text_1">
+                    A 7-day trip in the best hotels in the country with a great tourist program and visiting the 
+                    most famous and best tourist attractions in the country and visiting the beaches 
+                    (the trip includes accommodation and a plane ticket for a maximum of 3 people)...
+                  </div>
+                  <div class="buttons">
+                    <a href="#" class="btn_sMore" data-i18n ="SEE_MORE" >SEE MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+              <div class="item">
+                <img src="images/city_Italy.jpg">
+                <div class="content">
+                  <div class="title" data-i18n ="Italy">
+                    Italy
+                  </div>
+                  <div class="description" data-i18n ="Discover">
+                    Discover
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/city_san_francisco_2.jpg">
+                <div class="content">
+                  <div class="title" data-i18n ="San_Francisco">
+                    San Francisco
+                  </div>
+                  <div class="description" data-i18n ="Discover">
+                    Discover
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                  <img src="images/city_london.jpg">
+                  <div class="content">
+                      <div class="title" data-i18n ="London">
+                        London
+                      </div>
+                      <div class="description" data-i18n ="Discover">
+                        Discover
+                      </div>
+                  </div>
+              </div>
+              <div class="item">
+                <img src="images/city_paris.jpg">
+                <div class="content">
+                  <div class="title" data-i18n ="paris">
+                    paris
+                  </div>
+                    <div class="description" data-i18n ="Discover">
+                      Discover
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+              <button id="prev" class="prev" title="Prev"><i class="fa-solid fa-angle-left"></i></button>
+              <button id="next" class="next" title="Next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+          </div>
+        </div>
+      </section>
+      <section class= "about_section">
+        <div class="container">
+          <div class="title_section_box about_section_title">
+            <h3 id="question_1" class="tit_section">WHY WE ARE THE BEST ?</h3>
+            <p id="answer" class="answer" >
+              we provide you with everything you need in one place, you can book a 
+              hotel and rent a car through us, 
+              in addition to our excellent land and sea trips.
+            </p>
+          </div>
+          <div class="trips_box">
+            <div class="card_box about_card_one">
+              <div class="box_img"><img src="images/dahab_trip.jpg" alt=""></div>
+              <div class="box_content">
+                <h1 class="name_trip" data-i18n ="Dahab">Dahab</h1>
+                <p class="desc" id="text_4">
+                  A full trip for 7 days in the most beautiful hotels overlooking the sea in Dahab, 
+                  including accommodation and safari trips...
+                </p>
+                <a href="#" class="sM_link"data-i18n ="SEE_MORE"> SEE MORE</a>
+              </div>
+            </div>
+            <div class="card_box about_card_two">
+              <div class="box_img"><img src="images/dubai_trip.jpg" alt=""></div>
+              <div class="box_content">
+                <h1 class="name_trip" data-i18n ="Dubai">Dubai</h1>
+                <p class="desc" id="text_5">
+                A 20-day tourist trip in Dubai to see the most beautiful Arab city in the world and visit the most 
+                famous tourist attractions in the world...
+                </p>
+                <a href="#" class="sM_link" data-i18n ="SEE_MORE"> SEE MORE</a>
+              </div>
+            </div>
+            <div class="card_box about_card_three">
+              <div class="box_content">
+                <h1 class="name_trip" data-i18n ="Maldives">Maldives</h1>
+                <p class="desc" id="text_6">
+                  A 15-day summer trip to one of the most beautiful islands in the world...the Maldives..
+                </p>
+                <a href="#" class="sM_link"data-i18n ="SEE_MORE"> SEE MORE</a>
+              </div>
+              <div class="box_img"><img src="images/maldive_trip.jpg" alt=""></div>
+
+            </div>
+            <div class="card_box about_card_four">
+              <div class="box_content">
+                <h1 class="name_trip" data-i18n ="Mecca" >Mecca</h1>
+                <p class="desc" id="text_7">
+                  Hajj and Umrah trips, accommodation starting from 15 days to 60 days in the best hotels in the 
+                  Kingdom of Saudi Arabia, providing two adults
+                </p>
+                <a href="#" class="sM_link" data-i18n ="SEE_MORE">SEE MORE</a>
+              </div>
+              <div class="box_img"><img src="images/mecca_trip.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="box_btn about_box_bnt">
+            <a href="#" class="btn_all_trips" data-i18n ="ALL_TRIPS"> ALL TRIPS</a>
+          </div>
+        </div>
+      </section>
+      <Section class="offer_section">
+        <div class="box_img">
+          <img src="images/maldive_trip_2.jpg" alt="">
+        </div> 
+        <div class="overlay">
+          <div class="container">
+            <div class="box_content offer_box_content">
+                <h2 class="title_section" id= "text_8" >Summer vacation trip</h2>
+                <div class="box_desc">
+                  <p class = "desc" id= "text_9">
+                    Summer trip: ten days to one of the most beautiful beaches in the world, the Maldives, 
+                    in the most beautiful hotels and the cheapest prices..The price per person is $149.00
+                  </p>
+                  <div class="btn_box">
+                    <a href="#" data-i18n ="DETAILS" class="details_btn">DETAILS</a>
+                  </div>
+                </div>
+                <div class="price_box">
+                  <p class="info" id= "text_10">from: Egypt (Cairo) </p>
+                  <p class="price" >$99.00 <span id= "text_11">person</span></p>
+                </div>
+                </div>
+            </div>
+          </div>  
+      </Section>
+      <section class= "slider_section" >
+        <div class="container">
+          <div class="box_content slider_section_header">
+            <h2 class="tit_section" data-i18n ="POPULAR_CRUISES">POPULAR CRUISES</h2>
+            <p class="desc_section" id="text_12">See some of our best and cheapest premium cruises</p>
+          </div>
+          <button class="btn btn_prev swiper-button-prev"></button>
+          <div class="slider_wrapper swiper slider_section_box_slider " dir="ltr">
+            <div class="cards_box swiper-wrapper ">
+              <div class="card swiper-slide slider_section_card">
+                <div class="box_main_content" id="box_content_slider">
+                  <div class="box_card_img">
+                    <img src="images/cruises_1.jpg" alt="">
+                    <div class="box_small_desc">
+                      <p class="small_tit" data-i18n="Spain">Spain</p>
+                      <p class="small_desc"  id="text_13">Travel time is 5 days on the ship</p>
+                    </div>
+                  </div>
+                  <div class="box_information">
+                    <div class="header">
+                      <h2 class="title" data-i18n="Spain" >Spain</h2>
+                      <p class="count_night"> 15 <span data-i18n="Night">Night</span></p>
+                    </div>
+                    <p class="desc" id="text_14" >Spend the best 15 days with your family in one of the most beautiful countries in the world </p>
+                    <div class="box_btn">
+                      <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        -
+                        <span data-i18n="Reviews">Reviews</span>
+                      </div>
+                      <a href="#" class="SM_btn" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide slider_section_card">
+                <div class="box_main_content">
+                  <div class="box_card_img">
+                    <img src="images/cruises_2.jpg" alt="">
+                    <div class="box_small_desc">
+                      <p class="small_tit">Holland</p>
+                      <p class="small_desc" id="text_13">Travel time is 5 days on the ship</p>
+                    </div>
+                  </div>
+                  <div class="box_information">
+                    <div class="header">
+                      <h2 class="title" data-i18n="Holland" >Holland</h2>
+                      <p class="count_night"> 15 <span data-i18n="Night">Night</span></p>
+                    </div>
+                    <p class="desc" id="text_14">Spend the best 15 days with your family in one of the most beautiful countries in the world</p>
+                    <div class="box_btn">
+                      <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        -
+                        <span data-i18n="Reviews">Reviews</span>
+                      </div>
+                      <a href="#" class="SM_btn" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide slider_section_card">
+                <div class="box_main_content">
+                  <div class="box_card_img">
+                    <img src="images/cruises_3.jpg" alt="">
+                    <div class="box_small_desc">
+                      <p class="small_tit"  data-i18n="Italy" >Italy</p>
+                      <p class="small_desc" id="text_13">Travel time is 5 days on the ship</p>
+                    </div>
+                  </div>
+                  <div class="box_information">
+                    <div class="header">
+                      <h2 class="title" data-i18n="Italy">Italy</h2>
+                      <p class="count_night"> 15 <span data-i18n="Night">Night</span></p>
+                    </div>
+                    <p class="desc" id="text_14">Spend the best 15 days with your family in one of the most beautiful countries in the world</p>
+                    <div class="box_btn">
+                      <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        -
+                        <span data-i18n ="Reviews">Reviews</span>
+                      </div>
+                      <a href="#" class="SM_btn" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide slider_section_card">
+                <div class="box_main_content">
+                  <div class="box_card_img">
+                    <img src="images/cruises_4.jpg" alt="">
+                    <div class="box_small_desc">
+                      <p class="small_tit"  data-i18n="Portugal">Portugal</p>
+                      <p class="small_desc" id="text_13">Travel time is 5 days on the ship</p>
+                    </div>
+                  </div>
+                  <div class="box_information">
+                    <div class="header">
+                      <h2 class="title" data-i18n="Portugal">Portugal</h2>
+                      <p class="count_night"> 15 <span data-i18n="Night">Night</span></p>
+                    </div>
+                    <p class="desc" id="text_14">Spend the best 15 days with your family in one of the most beautiful countries in the world </p>
+                    <div class="box_btn">
+                      <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        -
+                        <span  data-i18n ="Reviews">Reviews</span>
+                      </div>
+                      <a href="#" class="SM_btn" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide slider_section_card">
+                <div class="box_main_content">
+                  <div class="box_card_img">
+                    <img src="images/cruises_5.jpg" alt="">
+                    <div class="box_small_desc">
+                      <p class="small_tit" data-i18n="Bahamas">Bahamas</p>
+                      <p class="small_desc" id="text_13">Travel time is 5 days on the ship</p>
+                    </div>
+                  </div>
+                  <div class="box_information">
+                    <div class="header">
+                      <h2 class="title"  data-i18n="Bahamas">Bahamas</h2>
+                      <p class="count_night"> 15 <span data-i18n="Night">Night</span></p>
+                    </div>
+                    <p class="desc" id="text_14">Spend the best 15 days with your family in one of the most beautiful countries in the world </p>
+                    <div class="box_btn">
+                      <div class="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        -
+                        <span data-i18n="Reviews">Reviews</span>
+                      </div>
+                      <a href="#" class="SM_btn" data-i18n ="SEE_MORE">SEE MORE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn_next swiper-button-next"></button>
+          <div class="box_btn slider_section_btn">
+            <a href="#" class="btn_all_trips" data-i18n ="ALL_CRUISES"> ALL CRUISES</a>
+          </div>
+        </div>
+      </section>
+      <section class="happy_section" dir="ltr">
+        <div class="box_section_img">
+          <img src="images/map_img.jpg" alt="">
+        </div> 
+        <div class="overlay">
+          <div class="container">
+            <div class="box_sides">
+              <div class="left_side side happy_section_left_side">
+                <div class="box_img"><img src="images/effect_1.png" alt=""></div>
+              </div>
+              <div class="right_side side happy_section_right_side">
+                <div class="box_title_section">
+                  <h2 class="title" id="text_15">Some clients comments</h2>
+                </div>
+                <div class="slider_comments swiper">
+                  <div class="comments_box  swiper-wrapper">
+                    <div class="box_card swiper-slide">
+                      <div class="card" dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_1.jpg" alt="">
+                          <p class="name" >Ahmed</p>
+                        </div>
+                        <div class="box_content" id="comment_info"  >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_2.jpg" alt="">
+                          <p class="name" >Adham</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">
+                            Lorem ipsum dolor, sit 
+                            amet consectetur adipisicing elit. 
+                            Architecto maxime magni fugit placeat. 
+                            Nesciunt perspiciatis aspernatur labore incidunt quod facilis,
+                            consequuntur, asperiores possimus quisquam 
+                            ipsum quae ipsam, tempore laboriosam reprehenderit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_card swiper-slide">
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_3.jpg" alt="">
+                          <p class="name" >Mohammed</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_4.jpg" alt="">
+                          <p class="name" >Khaled</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_card swiper-slide">
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_5.jpg" alt="">
+                          <p class="name" >Yasser</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_6.jpg" alt="">
+                          <p class="name" >Ali</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_card swiper-slide">
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_7.jpg" alt="">
+                          <p class="name" >Mahmoud</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                      <div class="card"  dir="ltr">
+                        <div class="box_card_img">
+                          <img src="images/people_profile_img_8.jpg" alt="">
+                          <p class="name" >Abdulrahman</p>
+                        </div>
+                        <div class="box_content"  id="comment_info" >
+                          <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto maxime magni fugit placeat. Nesciunt perspiciatis aspernatur labore incidunt quod facilis, consequuntur, asperiores possimus quisquam ipsum quae ipsam, tempore laboriosam reprehenderit.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="box_content">
+          <div class="box_logo">
+            <h2 class="logo">FLY</h2>
+            <div class="info" id ="text_16">Discover the world through us</div>
+            <div class="box_social">
+              <h3 class="social_title" data-i18n ="Follow_Us" >Follow Us</h3>
+              <div class="links">
+                <a href="#" class="link face"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="link instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="link linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="link twitter"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="box_main_box_links">
+            <div class="box_trips box">
+              <h3 class="title" data-i18n ="Flights">Flights</h3>
+              <div class="box_links">
+                <a href="#" class="link" data-i18n ="Dahab" >Dahab</a>
+                <a href="#" class="link" data-i18n ="Dubai" >Dubai</a>
+                <a href="#" class="link" data-i18n ="Maldives" >Maldives</a>
+                <a href="#" class="link" data-i18n ="Mecca" >Mecca</a>
+              </div>
+            </div>
+            <div class="box_cruises box">
+              <h3 class="title" data-i18n ="CRUISES" >CRUISES</h3>
+              <div class="box_links">
+                <a href="#" class="link" data-i18n ="Spain" >Spain</a>
+                <a href="#" class="link" data-i18n ="Holland" >Holland</a>
+                <a href="#" class="link" data-i18n ="Italy" >Italy</a>
+                <a href="#" class="link" data-i18n ="Portugal" >Portugal</a>
+                <a href="#" class="link" data-i18n ="Bahamas" >Bahamas</a>
+              </div>
+            </div>
+            <div class="box_quick box">
+              <h3 class="title" data-i18n ="Quick_Links">Quick Links</h3>
+              <div class="box_links">
+                <a href="#" class="link"><i class="fa-solid fa-house"></i> <span data-i18n ="Home" > HOME </span> </a>
+                <a href="#" class="link"><i class="fa-solid fa-list"></i>  <span data-i18n ="Offers" > Offers </span> </a>
+                <a href="#" class="link"><i class="fa-solid fa-medal"></i> <span data-i18n ="About_Us" > About US </span> </a>
+                <a href="#" class="link"><i class="fa-solid fa-phone"></i> <span data-i18n ="Contacts" > Contacts </span> </a>
+                <a href="#" class="link"><i class="fa-solid fa-user"></i>  <span data-i18n ="Login" > Login </span> </a>
+              </div>
+            </div>
+          </div>
+          <div class="box_contact box"> <!-- // box_contact  --> 
+            <h3 class="title" data-i18n ="Newsletter" >Newsletter </h3>
+            <div class="box_input">
+              <input type="massage" class="text_inp">
+              <input type="submit" value="Submit" class="btn" data-i18n ="Submit">
+            </div>
+            <div class="cust_support">
+              <h3 class="cust_title" data-i18n ="Customer_Support">Customer Support</h3>
+              <p class="phone_box">
+                <a href="https://wa.me/01272852406" class="phone"><i class="fa-solid fa-phone"></i> 01272852406 (<span id="text_17">My personal phone number</span>)</a>
+                <a href="https://wa.me/01558222751" class="phone"><i class="fa-solid fa-phone"></i> 01558222751 (<span id="text_17" >My personal phone number</span>)</a>
+              </p>
+              <a href="mailto:adham.harry094@gmail.com"  class="email"><i class="fa-solid fa-envelope"></i> adham.harry094@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="box_copyright">
+          <p class="text" dir ="ltr">© Copyright 2024 FLY. All Rights Reserved. Design By <span>Ezzat Ahmed</span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+<!-- START footer_links -->
+<script src="Style/scrollreveal.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="Style/swiper-bundle.min.js"></script>
+<script src ="Style/languages.js"></script>
+<script src ="Style/style.js"></script>
+<!-- END footer_links -->
+
+
